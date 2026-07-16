@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VOLT — Street Footwear</title>
+<meta name="description" content="VOLT — bold streetwear sneakers, new drops weekly.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== MARQUEE ===== -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span>NEW DROP EVERY FRIDAY</span><span>★</span>
+    <span>FREE SHIPPING OVER ₹2000</span><span>★</span>
+    <span>LIMITED SIZES — MOVE FAST</span><span>★</span>
+    <span>NEW DROP EVERY FRIDAY</span><span>★</span>
+    <span>FREE SHIPPING OVER ₹2000</span><span>★</span>
+    <span>LIMITED SIZES — MOVE FAST</span><span>★</span>
+  </div>
+</div>
+
+<!-- ===== NAV ===== -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-logo">VOLT<span class="dot"></span></a>
+    <div class="nav-links" id="navLinks">
+      <a href="#shop">Shop</a>
+      <a href="#drops">Drops</a>
+      <a href="#about">About</a>
+    </div>
+    <div class="nav-actions">
+      <button class="cart-btn" id="cartBtn">
+        Cart <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<header class="hero" id="top">
+  <div class="hero-inner">
+    <p class="hero-tag">SS26 COLLECTION</p>
+    <h1 class="hero-title">STEP INTO<br><span class="stroke">THE VOLT</span></h1>
+    <p class="hero-sub">Bold sneakers for people who don't walk quietly.</p>
+    <a href="#shop" class="btn btn-primary">Shop the drop</a>
+  </div>
+  <div class="hero-glow"></div>
+</header>
+
+<main>
+
+  <!-- ===== CATEGORY STRIP ===== -->
+  <section class="cat-strip">
+    <div class="section-inner cat-inner" id="catTabs">
+      <button class="cat-tab active" data-cat="all">All</button>
+      <button class="cat-tab" data-cat="running">Running</button>
+      <button class="cat-tab" data-cat="street">Street</button>
+      <button class="cat-tab" data-cat="high-top">High-Top</button>
+    </div>
+  </section>
+
+  <!-- ===== SHOP GRID ===== -->
+  <section class="section" id="shop">
+    <div class="section-inner">
+      <div class="product-grid" id="productGrid"></div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURED DROP ===== -->
+  <section class="drop-banner" id="drops">
+    <div class="section-inner drop-inner">
+      <p class="drop-tag">FRIDAY DROP</p>
+      <h2 class="drop-title">VOLT AIR — LIMITED 200 PAIRS</h2>
+      <p class="drop-sub">Every Friday, 200 pairs. Gone by Saturday.</p>
+      <a href="#shop" class="btn btn-outline">Notify me</a>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <div class="section-inner about-grid">
+      <div class="about-visual">
+  <div class="about-frame">
+    <img src="assets/images/store_lifestyle.png" alt="VOLT lifestyle" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius);">
+  </div>
+</div>
+      <div class="about-text">
+        <p class="section-eyebrow">Our story</p>
+        <h2 class="section-title">Made for the street, not the shelf.</h2>
+        <p class="body-text">
+          VOLT started with one idea — sneakers should feel as loud as
+          the city they're worn in. Every pair is designed in small
+          batches, tested on real streets, and never restocked the same way twice.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEWSLETTER ===== -->
+  <section class="newsletter">
+    <div class="section-inner news-inner">
+      <h2>Get drop alerts first.</h2>
+      <p>No spam. Just Friday drops before they sell out.</p>
+      <form class="news-form" id="newsForm">
+        <input type="email" placeholder="your@email.com" required>
+        <button type="submit" class="btn btn-primary">Notify me</button>
+      </form>
+      <p class="news-note" id="newsNote"></p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== CART DRAWER ===== -->
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer">
+  <div class="cart-header">
+    <h3>Your Cart</h3>
+    <button id="cartClose" aria-label="Close cart">✕</button>
+  </div>
+  <div class="cart-items" id="cartItems">
+    <p class="cart-empty">Your cart is empty. Add something loud.</p>
+  </div>
+  <div class="cart-footer">
+    <div class="cart-total"><span>Total</span><span id="cartTotal">₹0</span></div>
+    <button class="btn btn-primary btn-full">Checkout</button>
+  </div>
+</aside>
+
+<footer class="footer">
+  <div class="section-inner footer-inner">
+    <span class="nav-logo">VOLT<span class="dot"></span></span>
+    <p>© Street footwear, built loud.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
